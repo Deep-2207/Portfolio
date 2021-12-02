@@ -86,11 +86,11 @@ body{
 /* home section css */
 
 .home{
+    background: url('../image/home\ 3.jpg') no-repeat center;
+    /* background-attachment: fixed; */
     
-    background-attachment: fixed;
-    
-    animation:animated 16s ease infinite;
-    background-size: cover;
+    /* animation:animated 16s ease infinite; */
+    /* background-size: contain; */
 
 }
 
@@ -102,7 +102,7 @@ body{
     }
     
     50%{
-        background: url('Content/image/home\ 3.jpg') no-repeat;
+        
         
     }
     100%{
@@ -188,6 +188,56 @@ body{
 .about .imgcontainer .aboutimage{
     position: relative;
 }
+.about .imgcontainer{
+    position: relative;
+}
+
+
+
+.about .imgcontainer span{
+    position: absolute;
+    background-color:  #225687;
+    transition: all 1s ease
+  }
+  .about .imgcontainer .one{
+    height: 0;
+    width: 3px;
+    top: 0;
+    left: 6px;
+  }
+  .about .imgcontainer .two{
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .about .imgcontainer .three{
+    height: 0;
+    width: 3px;
+    bottom:0;
+    right:6px;
+  }
+  .about .imgcontainer .four{
+    height: 3px;
+    width: 0;
+    top: 0;
+    right: 0;
+  }
+  .about .imgcontainer:hover .one,
+  .about .imgcontainer:hover .three{
+    height: 100%;
+  }
+  .about .imgcontainer:hover .two,
+  .about .imgcontainer:hover .four{
+    width: 100%;
+  }
+  .about .imgcontainer:hover img{
+    transition-duration: .3s;
+    transition-delay: .3s;
+    
+  }
+
+
 .about .imgcontainer .social-icone{
     position: absolute;
     bottom: 0%;
@@ -201,6 +251,7 @@ body{
     padding: .5rem;
     font-size: 3rem;
  
+    
 }
 
 .fa-facebook,
@@ -604,7 +655,9 @@ body{
     padding: 0 1rem;
     color: #333;
 }
-
+.Contect .info-box h2 .fa-phone{
+    transform: rotate(100deg);
+}
 .Contect .info-box a{
 
     font-size: 1.8rem;

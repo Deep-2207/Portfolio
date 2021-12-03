@@ -83,6 +83,7 @@ body{
     border-bottom: .2rem solid #225687; 
 }
 
+
 /* home section css */
 
 .home{
@@ -406,6 +407,26 @@ body{
     }
 }
 
+.about .cv-btn button{
+    height: 4rem;
+    width: 16rem;
+    background: #225687;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.about .cv-btn button:hover{
+    background: none;
+    border: .1rem solid #225687;
+    color:#333;
+    font-size: 1.8rem;
+    box-shadow: 0 0.5rem 0.5rem #225687;
+
+}
 
 
 

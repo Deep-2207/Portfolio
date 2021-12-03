@@ -31,6 +31,8 @@ $(document).ready(function () {
         $(this).addClass('activat').siblings().removeClass('activat');
     })
 
+
+
     //posrfoilo btn activation
     $('.navbar ul li').click(function () {
         $(this).addClass('activat').siblings().removeClass('activat');

@@ -33,6 +33,20 @@ $(document).ready(function () {
 
 
 
+    $(window).on('scroll', function() {
+        $('.target').each(function() {
+            if($(window).scrollTop() >= $(this).offset().top - 120) {
+                var id = $(this).attr('id');
+                // console.log($(this).offset().top);
+                // console.log($(this).attr('id'));
+                $('.header .navbar ul li a').removeClass('ac');
+                $('.header .navbar ul li a[href="#'+ id +'"]').addClass('ac');
+            }
+        });
+    });
+
+
+
     //posrfoilo btn activation
     $('.navbar ul li').click(function () {
         $(this).addClass('activat').siblings().removeClass('activat');
